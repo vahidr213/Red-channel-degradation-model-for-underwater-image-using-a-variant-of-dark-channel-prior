@@ -8,11 +8,12 @@ The problem of measuring the amount of improvement after enhancing image is cruc
 The following code provides a model based on medium transmission in underwater images. The medium transmission is computed based on Dark Channel Prior. To estimate medium transmission, it is supposed that a haze free environment is colourful with some shadows. Therefore, at least one colour channel has some pixel with low intensity. This assumption is called Dark Channel Prior. Here, we are going to employ a variant of dark channel prior [2] suitable for hazing underwater images.
 The equation that is used to calculate medium transmission is as follows:
 
-t(x)=1-min⁡( {min┬(y∈Ω(x) )⁡( 1-I^R (y))/(1-A^R )  }  {(min┬(y∈Ω(x) ) I^G (y))/A^G }  {(min┬(y∈Ω(x) ) I^B (y))/A^B })
+![image](https://user-images.githubusercontent.com/6873668/114262290-6b86d300-99f4-11eb-8542-73bce35fa753.png)
 
-Where each of {} is provided from Red, Green and Blue channels from the image.
 The following degradation model is used on the red channel:
+
 I(x) = J(x)t(x) - A ( 1 – t(x) )
+
 To increase the amount of degradation, the term A ( 1 – t(x) ) is subtracted from J(x)t(x).
 To show an example of degrading red channel using the above model for an almost clear underwater image see the image below.
 ![image](https://user-images.githubusercontent.com/6873668/114090074-32ebda00-98cc-11eb-991e-f7e8a5deed99.png)
