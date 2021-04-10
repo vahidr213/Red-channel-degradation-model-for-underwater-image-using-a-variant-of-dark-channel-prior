@@ -21,7 +21,7 @@ To show an example of degrading red channel using the above model for an almost 
 ![image](https://user-images.githubusercontent.com/6873668/114090074-32ebda00-98cc-11eb-991e-f7e8a5deed99.png)
 
  
-Red Channel Degraded image						Original Image		
+Red Channel Degraded image	     			   -   		Original Image		
 
 [1]	https://li-chongyi.github.io/proj_benchmark.html
 
