@@ -14,8 +14,10 @@ The following degradation model is used on the red channel:
 
 I(x) = J(x)t(x) - A ( 1 – t(x) )
 
+Where J(x) is the original image (not degraded) and I(x) is the degraded image.
 To increase the amount of degradation, the term A ( 1 – t(x) ) is subtracted from J(x)t(x).
 To show an example of degrading red channel using the above model for an almost clear underwater image see the image below.
+
 ![image](https://user-images.githubusercontent.com/6873668/114090074-32ebda00-98cc-11eb-991e-f7e8a5deed99.png)
 
  
